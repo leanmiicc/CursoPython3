@@ -149,6 +149,7 @@ dentroRango = valor >= inicio and valor <= fin # Expresion de tipo Boolean
 if dentroRango == True:
     print(f'El numero {valor}, se encuentra dentro del rango ({inicio},{fin}) informado.')
 else:
+    print(f'El numero {valor}, se encuentra fuera del rango ({inicio},{fin}) informado.')
 """
 
 print("----------------------------------------------------")
