@@ -164,3 +164,68 @@ if asistirJuego:
     print('El padre puede asistir al juego de su hijo.')
 else:
     print('El padre no puede asistir al juego de su hijo.')
+
+
+print("----------------------------------------------------")
+print("Leccion 4.25")
+print("---- Ejercicio: Operador not - Asistir Juego----")
+
+vacaciones = False
+diaDescanso = True
+asistirJuego = vacaciones or diaDescanso
+
+if not asistirJuego:
+    print('El padre no puede asistir al juego de su hijo.')
+else:
+    print('El padre puede asistir al juego de su hijo.')
+
+print("----------------------------------------------------")
+print("Leccion 4.26")
+print("---- Ejercicio: Operadores AND y OR ----")
+
+edad = int(input("Ingrese su edad: "))
+comparacionEdad = 20 <= edad < 30
+fueraDeRangoEdad = edad < 20 or edad >= 30
+
+if comparacionEdad:
+    print("Su edad esta dentro del rango de 20 y 30 años")
+elif fueraDeRangoEdad:
+        print("Su edad esta fuera del rango de 20 y 30 años")
+
+print("----------------------------------------------------")
+print("Leccion 4.27")
+print("---- Ejercicio: El numero mayor ----")
+
+numero1 = int(input("Proporciona el numero1: "))
+numero2  = int(input("Proporciona el numero2: "))
+mayorQue = numero1 > numero2
+
+if mayorQue:
+    print(f'El numero mayor es: {numero1}')
+elif numero1 == numero2 :
+    print("Los numeros ingresados son iguales.")
+else:
+    print(f"El numero mayor es: {numero2}")
+
+print("----------------------------------------------------")
+print("Leccion 4.28")
+print("---- Ejercicio: Informacion de un libro ----\n")
+
+nameBook = input("Ingrese el nombre del libro: ")
+idBook = int(input("Ingrese el ID del libro: "))
+price = float(input("Ingrese el precio del libro: "))
+shipingFree = input("Ingrese si el envio es gratis (True or False): ")
+
+if shipingFree == 'True':
+    shipingFree = True
+elif shipingFree == 'False':
+    shipingFree = False
+else:
+    shipingFree = 'Valor incorrecto, debe escribir True o False'
+
+print(f'''
+    Nombre: {nameBook}
+    ID: {idBook}
+    Precio: {price}
+    Envio gratuito?: {shipingFree}
+''')
