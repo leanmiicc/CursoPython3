@@ -92,7 +92,28 @@ class Persona3:
         print(f'Persona: {self.nombre} {self.edad}')
 
 persona1 = Persona3('Mateo', 2)
+
+# En esta caso no es necesario pasarle la referencia ya que como el metodo es llamado desde la instacia del objeto, toma el objeto creado como referencian self
 persona1.mostrarDetalles()
+
+# puede agregar un nuevo un nuevo atributo al objeto persona1 de la siguiente manera:
+persona1.telefono = '11635323121'
+print(f'el telefono de {persona1.nombre} es {persona1.telefono}')
+
+# Tambien se puede llamar al metodo mostrarDetalle invocandolo desde la clase, pero en esta caso hay que pasarle la referencia, se le pasa el objeto persona 1 = Mateo, 2
+Persona3.mostrarDetalles(persona1)
+
+# Creacion de un segundo objeto a partir de la clase Persona3:
 
 persona2 = Persona3('Marta', 3)
 persona2.mostrarDetalles()
+
+# Si bien se agrego el atributo de telefono en el objeto persona1, no se translada al objeto persona2:
+# Error: AttributeError: 'Persona3' object has no attribute 'telefono'
+# print(persona2.telefono)
+
+
+print("----------------------------------------------------")
+print("Leccion 9.62")
+print("---- Clases y Objetos en Python: Metodo de Instancia en Python  ----")
+
