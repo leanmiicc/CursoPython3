@@ -1,3 +1,5 @@
+from Generic.titulosEjercicios.tituloEjercicio import tituloEjercicio
+
 print("----------------------------------------------------")
 print("Leccion 9.58")
 print("---- Clases y Objetos en Python ----")
@@ -113,7 +115,25 @@ persona2.mostrarDetalles()
 # print(persona2.telefono)
 
 
-print("----------------------------------------------------")
-print("Leccion 9.62")
-print("---- Clases y Objetos en Python: Metodo de Instancia en Python  ----")
+print('Continua en la clase Aritmetica')
+
+titulo = tituloEjercicio('Leccion 9.65', 'Robusteciendo metodo __init__').generarTitulo()
+
+class Persona4:
+    def __init__(self, nombre, apellido, edad, *args, **kwargs):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+        self.args = args
+        self.kwargs = kwargs
+
+    def mostrarDetalles(self):
+        print('Utilizo el método mostrarDetalles(): ')
+        print(f'Persona: {self.nombre} - {self.apellido} - {self.edad} - {self.args} - {self.kwargs}')
+
+persona5 = Persona4('Leandro', 'Gonzalez', 25, '15342514', 2, 3, 5, sexo='masculino',ejercicio=True)
+persona5.mostrarDetalles()
+
+
+
 
