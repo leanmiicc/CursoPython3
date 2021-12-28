@@ -1,4 +1,4 @@
-from Generic.titulosEjercicios.tituloEjercicio import tituloEjercicio
+from Generic.formateoArchivos.tituloEjercicio import tituloEjercicio
 
 print("----------------------------------------------------")
 print("Leccion 9.58")

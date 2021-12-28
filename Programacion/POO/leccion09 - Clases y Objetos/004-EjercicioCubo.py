@@ -1,4 +1,4 @@
-from Generic.titulosEjercicios.tituloEjercicio import tituloEjercicio
+from Generic.formateoArchivos.tituloEjercicio import tituloEjercicio
 
 titulo = tituloEjercicio('Leccion 9.64', 'Ejercicio: Calcular el volumen de un cubo').generarTitulo()
 

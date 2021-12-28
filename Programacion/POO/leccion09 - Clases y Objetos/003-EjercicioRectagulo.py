@@ -1,5 +1,5 @@
 # Creé un directorio donde guardo el formato de las lecciones y los titulos, lo import y lo instancio para usarlo.
-from Generic.titulosEjercicios.tituloEjercicio import tituloEjercicio
+from Generic.formateoArchivos.tituloEjercicio import tituloEjercicio
 
 # Creo la variable ejercicio, le paso por paremtro la leccion y el titulo al constructor y luego llamo al metedo que tiene el formato.
 ejercicio = tituloEjercicio('Leccion 9.63', 'Ejercicio: Calcular el area de un Rectangulo').generarTitulo()
