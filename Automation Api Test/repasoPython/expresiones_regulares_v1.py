@@ -1,6 +1,10 @@
 import re
 import datetime
+from Generic.formateoArchivos.separador import separador
 
+separador = separador()
+
+separador.separador()
 text = 'Este texto contiene el valor Scenario:HOY ahora'
 
 patronDeBusqueda = r'(?<=Scenario:)\w+'
@@ -14,7 +18,8 @@ for variable in variables:
 
 print(text)
 
-# --------------------------------------------------------------------------
+separador.separador()
+
 # Colocamos en una funcion lo anterior:
 
 API_hostAddressBase = u'https://petstore.swagger.io/v2'
@@ -38,3 +43,5 @@ def replace_with_context_values(text):
     return text
 
 endpoint = get_full_host(partHost)
+
+separador.separador()

@@ -5,6 +5,5 @@ class tituloEjercicio:
         self.titulo = titulo
 
     def generarTitulo(self):
-        print("----------------------------------------------------")
         print(f'---- {self.numeroLeccion} ----')
         print(f"---- {self.titulo} ----")
